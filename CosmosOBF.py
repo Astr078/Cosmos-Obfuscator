@@ -200,21 +200,21 @@ class Cosmos:
     # size2_in_kb = round(size2 / 1024, 2)
     with open(output_file, "w") as f:
         f.write(
-            f"__obfuscator__ = 'Cosmos'\n___version__= '1.0'\n__Creators__ = ('Brigade Anti420#7274, Astr078')\n__github__ = 'https://github.com/Astr078'\n__server__ = 'https://discord.io/Astr0'\n\n{confusing}\nif __name__ == '__main__':\n '''{myname}''';a='''import base64;import lzma;data=base64.urlsafe_b64decode('frfrfre');code=lzma.decompress(data);exec(code.decode('utf-8'))''';'''{mynameexp1}''';'''{myname}''';i='''import base64;import lzma;data=base64.urlsafe_b64decode('{obfuscated_code}');code=lzma.decompress(data);exec(code.decode('utf-8'))''';'''{mynameexp1}''';exec(i);'''{mynameexp1}''';'''{mynameexp3}'''")
-    # obfuscated_pyc = os.path.splitext(f'{filename}')[0] + ".pyc"
-    # ask = input(LIGHT_PURPLE + ' [' + white + '?' + LIGHT_PURPLE +
-    #           '] ' + white + 'Do you want to compile the obfuscated code into a .pyc file? (y/n) ')
-    # if ask == "y":
-    # py_compile.compile(output_file, cfile=obfuscated_pyc)
-    # with open(obfuscated_pyc, 'r+b') as f:
-    #     f.seek(0, 2)  # Go to the end of the file
-    #     addtt = r'''import base64;import lzma;data=base64.b64decode('');code=lzma.decompress(data);exec(code.decode('utf-8'));'''
-    #     nal4 = random.randint(20000, 21000)
-    #     mynameexp = addtt * nal4
-    #     f.write(b'\nCompiled With Cosmos Obfuscator !')  # Write some text
-    # else:
-    #     print('')
-    #     return obfuscated_code
+            f"__obfuscator__ = 'Cosmos'\n___version__= '1.0'\n__Creators__ = ('Brigade Anti420#7274, Astr078')\n__github__ = 'https://github.com/Astr078'\n__server__ = 'https://discord.io/Astr0'\n\n{confusing}\nif __name__ == '__main__':\n '''{mynameexp3}''';'''{myname}''';a='''import base64;import lzma;data=base64.urlsafe_b64decode({r});code=lzma.decompress(data);exec(code.decode('utf-8'))''';'''{mynameexp1}''';'''{myname}''';i='''import base64;import lzma;data=base64.urlsafe_b64decode('{obfuscated_code}');code=lzma.decompress(data);exec(code.decode('utf-8'))''';'''{mynameexp1}''';exec(i);'''{mynameexp1}''';'''{mynameexp3}'''")
+    obfuscated_pyc = os.path.splitext(f'{filename}')[0] + ".pyc"
+    ask = input(LIGHT_PURPLE + ' [' + white + '?' + LIGHT_PURPLE +
+              '] ' + white + 'Do you want to compile the obfuscated code into a .pyc file? (y/n) ')
+    if ask == "y":
+        py_compile.compile(output_file, cfile=obfuscated_pyc)
+        with open(obfuscated_pyc, 'r+b') as f:
+            f.seek(0, 2)  # Go to the end of the file
+            addtt = r'''import base64;import lzma;data=base64.b64decode('');code=lzma.decompress(data);exec(code.decode('utf-8'));'''
+            nal4 = random.randint(20000, 21000)
+            mynameexp = addtt * nal4
+            f.write(b'\nCompiled With Cosmos Obfuscator !')  # Write some text
+    else:
+        print('')
+        return obfuscated_code
     
 if __name__ == "__main__":
     white = Col.white
@@ -227,13 +227,13 @@ if __name__ == "__main__":
     if os.path.isfile(filename):
         sans_ext = os.path.splitext(os.path.basename(filename))[0]
         now = time()
-        # ask2 = input(LIGHT_PURPLE + ' [' + white + '?' + LIGHT_PURPLE +
-        #       '] ' + white + 'Do you want to compile in py ? (y/n)')
-        # if ask2 == ('y'):
-        now = round(time() - now, 2)        
-        obfuscate_code(filename, f"{sans_ext}-cosmosOBF.py")
-        # else :
-        #     print('')
+        ask2 = input(LIGHT_PURPLE + ' [' + white + '?' + LIGHT_PURPLE +
+              '] ' + white + 'Do you want to compile in py ? (y/n)')
+        if ask2 == ('y'):
+            now = round(time() - now, 2)        
+            obfuscate_code(filename, f"{sans_ext}-cosmosOBF.py")
+        else :
+            print('')
         if os.path.isfile(f"{sans_ext}-cosmosOBF.py"):
             size = os.path.getsize(filename)
             size_in_kb = round(size / 1024, 2)
