@@ -65,7 +65,7 @@ def sun(text):
                 red = 245
     return faded
 
-def water(text):
+def darkblue(text):
     os.system("")
     faded = ""
     green = 0
@@ -115,7 +115,7 @@ def purple_pink(text):
             b -= 20
     return faded
 
-def cyan(text):
+def Light_blue(text):
     os.system("")
     faded = ""
     blue = 0
@@ -220,7 +220,7 @@ if __name__ == "__main__":
     white = Col.white
     dblue = Col.blue
     centerban = Center.XCenter(text)
-    rdmcolor= [water, cyan, sun, purple_pink, rose_to_green]
+    rdmcolor= [darkblue, Light_blue, sun, purple_pink, rose_to_green]
     rdm = random.choice(rdmcolor)
     print(rdm(centerban))
     filename = input(LIGHT_PURPLE + ' [' + white + '?' + LIGHT_PURPLE +'] ' + white + "Drag the file you want to obfuscate: ")
