@@ -180,7 +180,7 @@ class Cosmos:
     def generate_coordinates(self, x_coordinates):
         y_coordinates = []
         for x in x_coordinates:
-            y = (x * random.uniform(random.uniform(73645, 99999), 99999) - random.uniform(random.uniform(73645, 99999), 99999)) * random.uniform(random.uniform(73645, 99999), 99999)ddddddddddddddddddddddddddddddddddddddddddddiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiihj
+            y = (x * random.uniform(random.uniform(73645, 99999), 99999) - random.uniform(random.uniform(73645, 99999), 99999)) * random.uniform(random.uniform(73645, 99999), 99999)
             y = y + (random.uniform(random.uniform(73645, 99999), 99999) / random.uniform(random.uniform(73645, 99999), 99999))
             y = y * random.uniform(random.uniform(73645, 99999), 99999)
             y_coordinates.append(y)
